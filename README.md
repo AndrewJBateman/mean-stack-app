@@ -1,27 +1,70 @@
-# MeanStackPractise
+# Mean Full Stack App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.6.
+Mongo Express Angular Node (MEAN) full-stack app, integrates Angular 7 frontend with Node.js backend.
 
-## Development server
+*** Note: to open web links in a new window use: _ctrl+click on link_**
+
+## Table of contents
+
+* [General info](#general-info)
+* [Screenshots](#screenshots)
+* [Technologies](#technologies)
+* [Setup](#setup)
+* [Features](#features)
+* [Status](#status)
+* [Inspiration](#inspiration)
+* [Contact](#contact)
+
+## General info
+
+* requires mongodb to be running (or use Mongoose and heroku mLab to access).
+
+* The tutorial was for Angular 4 but the latest version of Angular 7 is used.
+
+## Screenshots
+
+![Example screenshot](./img/.png)
+
+## Technologies
+
+* [MongoDB Community Server v4.0.9](https://www.mongodb.com/download-center/community)
+
+* [npm mongodb v3.2.5](https://www.npmjs.com/package/mongodb) official MongoDB driver for Node.js
+
+* [Express.js middleware v4.17.0](https://expressjs.com/)
+
+* [Angular CLI v7.3.9](https://github.com/angular/angular-cli)
+
+* [Angular framework v7.2.15](https://angular.io/)
+
+* [Node.js v10.15.3](https://nodejs.org/es/)
+
+* [npm bodyparser middleware v1.19.0](https://www.npmjs.com/package/body-parser) to parse incoming request bodies.
+
+## Setup
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## Code Examples
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Features
 
-## Running end-to-end tests
+* tba
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Status & To-Do List
 
-## Further help
+* Status: working Angular 7 frontend. Backend ends more work.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* To-Do: remove reference to Mongoose, remove routing module, fix backend code and test. Create dist file.
+
+## Inspiration
+
+* [Coursetro: Setting up a MEAN4+ App (MongoDB, Express.js, Nodejs, Angular)](https://www.youtube.com/watch?v=Tw-rskOmcMM)
+
+* [Coursetro Gary Simon written tutorial for the above video](https://coursetro.com/posts/code/84/Setting-up-an-Angular-4-MEAN-Stack-(Tutorial))
+
+## Contact
+
+Repo created by [ABateman](https://www.andrewbateman.org) - feel free to contact me!
