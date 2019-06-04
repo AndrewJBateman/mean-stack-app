@@ -19,7 +19,7 @@ Mongo Express Angular Node (MEAN) full-stack app, integrates Angular 7 frontend 
 
 * requires mongodb to be running (or use Mongoose and heroku mLab to access).
 
-* The tutorial was for Angular 4 but the latest version of Angular 7 is used.
+* The tutorial was for Angular 4 but the latest version of Angular 8 is used.
 
 ## Screenshots
 
@@ -29,15 +29,15 @@ Mongo Express Angular Node (MEAN) full-stack app, integrates Angular 7 frontend 
 
 * [MongoDB Community Server v4.0.9](https://www.mongodb.com/download-center/community)
 
-* [npm mongodb v3.2.5](https://www.npmjs.com/package/mongodb) official MongoDB driver for Node.js
+* [npm mongodb v3.2.6](https://www.npmjs.com/package/mongodb) official MongoDB driver for Node.js
 
-* [Express.js middleware v4.17.0](https://expressjs.com/)
+* [Express.js middleware v4.17.1](https://expressjs.com/)
 
-* [Angular CLI v7.3.9](https://github.com/angular/angular-cli)
+* [Angular CLI v8.0.1](https://github.com/angular/angular-cli)
 
-* [Angular framework v7.2.15](https://angular.io/)
+* [Angular framework v8.0.0](https://angular.io/)
 
-* [Node.js v10.15.3](https://nodejs.org/es/)
+* [Node.js v12.3.1](https://nodejs.org/es/)
 
 * [npm bodyparser middleware v1.19.0](https://www.npmjs.com/package/body-parser) to parse incoming request bodies.
 
@@ -57,7 +57,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Status & To-Do List
 
-* Status: working Angular 7 frontend. Backend ends more work.
+* Status: working Angular 8 frontend. Backend end needs more work.
 
 * To-Do: remove reference to Mongoose, remove routing module, fix backend code and test. Create dist file.
 
