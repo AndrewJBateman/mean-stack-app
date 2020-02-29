@@ -1,6 +1,6 @@
 # Mean Full Stack App
 
-Mongo Express Angular Node (MEAN) full-stack app, integrates Angular 7 frontend with Node.js backend.
+Mongo Express Angular Node (MEAN) full-stack app, integrates Angular 9 frontend with Node.js backend.
 
 *** Note: to open web links in a new window use: _ctrl+click on link_**
 
@@ -18,8 +18,7 @@ Mongo Express Angular Node (MEAN) full-stack app, integrates Angular 7 frontend 
 ## General info
 
 * requires mongodb to be running (or use Mongoose and heroku mLab to access).
-
-* The tutorial was for Angular 4 but the latest version of Angular 8 is used.
+* The tutorial was for Angular 4 but the latest version of Angular 9 is used.
 
 ## Screenshots
 
@@ -28,43 +27,54 @@ Mongo Express Angular Node (MEAN) full-stack app, integrates Angular 7 frontend 
 ## Technologies
 
 * [MongoDB Community Server v4.0.9](https://www.mongodb.com/download-center/community)
-
-* [npm mongodb v3.2.6](https://www.npmjs.com/package/mongodb) official MongoDB driver for Node.js
-
+* [npm mongodb v3.5.4](https://www.npmjs.com/package/mongodb) official MongoDB driver for Node.js
 * [Express.js middleware v4.17.1](https://expressjs.com/)
-
-* [Angular CLI v8.0.1](https://github.com/angular/angular-cli)
-
-* [Angular framework v8.0.0](https://angular.io/)
-
-* [Node.js v12.3.1](https://nodejs.org/es/)
-
+* [Angular framework v9.1.0](https://angular.io/)
+* [Node.js v12.4.0](https://nodejs.org/es/)
 * [npm bodyparser middleware v1.19.0](https://www.npmjs.com/package/body-parser) to parse incoming request bodies.
 
 ## Setup
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* Install dependencies using `npm i`
+* Run `ng serve` for a dev server.
+* Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
 ## Code Examples
 
-* tba
+* server/api.js express routing get request for users
+
+```javascript
+// Get all users
+router.get('/users', (req, res) => {
+    connection((db) => {
+        db.collection('users')
+            .find()
+            .toArray()
+            .then((users) => {
+                response.data = users;
+                res.json(response);
+            })
+            .catch((err) => {
+                sendError(err, res);
+            });
+    });
+});
+```
 
 ## Features
 
-* tba
+* updated to use latest Angular v9
 
 ## Status & To-Do List
 
-* Status: working Angular 8 frontend. Backend end needs more work.
-
+* Status: working Angular 9 frontend. Backend end needs more work.
 * To-Do: remove reference to Mongoose, remove routing module, fix backend code and test. Create dist file.
 
 ## Inspiration
 
 * [Coursetro: Setting up a MEAN4+ App (MongoDB, Express.js, Nodejs, Angular)](https://www.youtube.com/watch?v=Tw-rskOmcMM)
-
 * [Coursetro Gary Simon written tutorial for the above video](https://coursetro.com/posts/code/84/Setting-up-an-Angular-4-MEAN-Stack-(Tutorial))
 
 ## Contact
