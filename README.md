@@ -1,33 +1,33 @@
-# Mean Full Stack App
+# :zap: Mean Full Stack App
 
 Mongo Express Angular Node (MEAN) full-stack app, integrates Angular 10 frontend with Node.js backend.
 
 *** Note: to open web links in a new window use: _ctrl+click on link_**
 
-## Table of contents
+## :page_facing_up: Table of contents
 
-* [Mean Full Stack App](#mean-full-stack-app)
-  * [Table of contents](#table-of-contents)
-  * [General info](#general-info)
-  * [Screenshots](#screenshots)
-  * [Technologies](#technologies)
-  * [Setup](#setup)
-  * [Code Examples](#code-examples)
-  * [Features](#features)
-  * [Status & To-Do List](#status--to-do-list)
-  * [Inspiration](#inspiration)
-  * [Contact](#contact)
+* [:zap: Mean Full Stack App](#zap-mean-full-stack-app)
+  * [:page_facing_up: Table of contents](#page_facing_up-table-of-contents)
+  * [:books: General info](#books-general-info)
+  * [:camera: Screenshots](#camera-screenshots)
+  * [:signal_strength: Technologies](#signal_strength-technologies)
+  * [:floppy_disk: Setup](#floppy_disk-setup)
+  * [:computer: Code Examples](#computer-code-examples)
+  * [:cool: Features](#cool-features)
+  * [:clipboard: Status & To-Do List](#clipboard-status--to-do-list)
+  * [:clap: Inspiration](#clap-inspiration)
+  * [:envelope: Contact](#envelope-contact)
 
-## General info
+## :books: General info
 
 * requires mongodb to be running (or use Mongoose and heroku mLab to access).
 * The tutorial was for Angular 4 the app has been updated to Angular 10.
 
-## Screenshots
+## :camera: Screenshots
 
 ![Example screenshot](./img/.png)
 
-## Technologies
+## :signal_strength: Technologies
 
 * [MongoDB Community Server v4](https://www.mongodb.com/download-center/community)
 * [npm mongodb v3](https://www.npmjs.com/package/mongodb) official MongoDB driver for Node.js
@@ -36,7 +36,7 @@ Mongo Express Angular Node (MEAN) full-stack app, integrates Angular 10 frontend
 * [Node.js v12](https://nodejs.org/es/)
 * [npm bodyparser middleware v1](https://www.npmjs.com/package/body-parser) to parse incoming request bodies.
 
-## Setup
+## :floppy_disk: Setup
 
 * Install dependencies using `npm i`
 * Run `ng serve` for a dev server.
@@ -44,7 +44,7 @@ Mongo Express Angular Node (MEAN) full-stack app, integrates Angular 10 frontend
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Code Examples
+## :computer: Code Examples
 
 * server/api.js express routing get request for users
 
@@ -66,20 +66,20 @@ router.get('/users', (req, res) => {
 });
 ```
 
-## Features
+## :cool: Features
 
 * updated to use latest Angular v10
 
-## Status & To-Do List
+## :clipboard: Status & To-Do List
 
 * Status: working Angular 10 frontend. Backend end needs more work.
 * To-Do: remove reference to Mongoose, remove routing module, fix backend code and test.
 
-## Inspiration
+## :clap: Inspiration
 
 * [Coursetro: Setting up a MEAN4+ App (MongoDB, Express.js, Nodejs, Angular)](https://www.youtube.com/watch?v=Tw-rskOmcMM)
 * [Coursetro Gary Simon written tutorial for the above video](https://coursetro.com/posts/code/84/Setting-up-an-Angular-4-MEAN-Stack-(Tutorial))
 
-## Contact
+## :envelope: Contact
 
 Repo created by [ABateman](https://www.andrewbateman.org) - feel free to contact me!
