@@ -1,6 +1,6 @@
 # Mean Full Stack App
 
-Mongo Express Angular Node (MEAN) full-stack app, integrates Angular 9 frontend with Node.js backend.
+Mongo Express Angular Node (MEAN) full-stack app, integrates Angular 10 frontend with Node.js backend.
 
 *** Note: to open web links in a new window use: _ctrl+click on link_**
 
@@ -21,7 +21,7 @@ Mongo Express Angular Node (MEAN) full-stack app, integrates Angular 9 frontend 
 ## General info
 
 * requires mongodb to be running (or use Mongoose and heroku mLab to access).
-* The tutorial was for Angular 4 but the latest version of Angular 9 is used.
+* The tutorial was for Angular 4 the app has been updated to Angular 10.
 
 ## Screenshots
 
@@ -29,16 +29,15 @@ Mongo Express Angular Node (MEAN) full-stack app, integrates Angular 9 frontend 
 
 ## Technologies
 
-* [MongoDB Community Server v4.0.9](https://www.mongodb.com/download-center/community)
-* [npm mongodb v3.5.4](https://www.npmjs.com/package/mongodb) official MongoDB driver for Node.js
-* [Express.js middleware v4.17.1](https://expressjs.com/)
-* [Angular framework v9.1.0](https://angular.io/)
-* [Node.js v12.4.0](https://nodejs.org/es/)
-* [npm bodyparser middleware v1.19.0](https://www.npmjs.com/package/body-parser) to parse incoming request bodies.
+* [MongoDB Community Server v4](https://www.mongodb.com/download-center/community)
+* [npm mongodb v3](https://www.npmjs.com/package/mongodb) official MongoDB driver for Node.js
+* [Express.js middleware v4](https://expressjs.com/)
+* [Angular framework v10](https://angular.io/)
+* [Node.js v12](https://nodejs.org/es/)
+* [npm bodyparser middleware v1](https://www.npmjs.com/package/body-parser) to parse incoming request bodies.
 
 ## Setup
 
-* reinstall @angular-devkit/build-angular
 * Install dependencies using `npm i`
 * Run `ng serve` for a dev server.
 * Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -69,12 +68,12 @@ router.get('/users', (req, res) => {
 
 ## Features
 
-* updated to use latest Angular v9
+* updated to use latest Angular v10
 
 ## Status & To-Do List
 
-* Status: working Angular 9 frontend. Backend end needs more work.
-* To-Do: remove reference to Mongoose, remove routing module, fix backend code and test. Create dist file.
+* Status: working Angular 10 frontend. Backend end needs more work.
+* To-Do: remove reference to Mongoose, remove routing module, fix backend code and test.
 
 ## Inspiration
 
