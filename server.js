@@ -1,27 +1,54 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const path = require('path');
-const http = require('http');
-const app = express();
+const app = require("./backend/app");
+const debug = require("debug")("node-angular");
+const http = require("http");
 
-// API file for interacting with MongoDB
-const api = require('./server/routes/api');
+const normalizePort = val => {
+  var port = parseInt(val, 10);
 
-// Parsers to parse (make understandable) incoming json and urlencoded request bodies.
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false}));
+  if (isNaN(port)) {
+    // named pipe
+    return val;
+  }
 
-// Angular DIST output folder
-app.use(express.static(path.join(__dirname, 'dist')));
+  if (port >= 0) {
+    // port number
+    return port;
+  }
 
-// API location
-app.use('/api', api);
+  return false;
+};
 
-// Send all other requests to the Angular app
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'dist/index.html'));
+const onError = error => {
+  if (error.syscall !== "listen") {
+    throw error;
+  }
+  const bind = typeof port === "string" ? "pipe " + port : "port " + port;
+  switch (error.code) {
+    case "EACCES":
+      console.error(bind + " requires elevated privileges");
+      process.exit(1);
+      break;
+    case "EADDRINUSE":
+      console.error( bind + " is already in use" );
+      process.exit(1 );
+      break;
+    default:
+      throw error;
+  }
+};
+
+const onListening = () => {
+  const addr = server.address();
+  const bind = typeof port === "string" ? "pipe " + addr : "port " + port;
+  debug( " Listening on " + bind);
+};
+
+const port = normalizePort(process.env.PORT || "3000");
+app.set("port", port);
+
+const server = http.createServer(app);
+server.on("error", onError);
+server.on("listening", onListening);
+server.listen(port, () => {
+  console.log('listening on port', port)
 });
-
-//Set Port
-const port = process.env.PORT || '3000';
-app.set('port', port);
