@@ -14,15 +14,14 @@ const CONNECT_OPTIONS = {
   useNewUrlParser: true,
   useCreateIndex: true,
   useUnifiedTopology: true,
+  useFindAndModify: false,
 };
-mongoose
-  .connect(CONNECTION_URL, CONNECT_OPTIONS)
-  .then(() => {
-    console.log("Connected to database");
-  })
-  .catch(() => {
-    console.log("Connection Failed");
-  });
+try {
+  mongoose.connect(CONNECTION_URL, CONNECT_OPTIONS, () =>
+  console.log("Connected to database"));
+} catch (error) {
+  console.log("could not connect");
+}
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
